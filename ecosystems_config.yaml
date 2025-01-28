@@ -1,0 +1,61 @@
+ecosystems:
+  pip:
+    files: 
+      - "requirements.txt"
+      - "**/requirements-dev.txt"
+      - "**/constraints.txt"
+
+  poetry:
+    files: 
+      - "pyproject.toml"
+      - "**/poetry.lock"
+
+  npm:
+    files: 
+      - "**/package.json"
+      - "**/package-lock.json"
+      - "**/yarn.lock"
+
+  docker:
+    files: 
+      - "Dockerfile"
+      - "**/Dockerfile"
+      - "dockerfile"
+      - "**/Dockerfile.*"
+      - "**/docker-compose.yml"
+      - "**/docker-compose.yaml"
+
+  github-actions:
+    files: 
+      - ".github/workflows/*.yml"
+      - ".github/workflows/*.yaml"
+
+  gradle:
+    files: 
+      - "build.gradle"
+      - "build.gradle.kts"
+      - "**/settings.gradle"
+      - "**/settings.gradle.kts"
+
+  maven:
+    files: 
+      - "pom.xml"
+      - "**/pom.xml"
+      - "**/settings.xml"
+
+  composer:
+    files: 
+      - "composer.json"
+      - "**/composer.lock"
+
+  nuget:
+    files: 
+      - "packages.config"
+      - "*.csproj"
+      - "*.vbproj"
+      - "*.nuspec"
+
+  gomod:
+    files: 
+      - "go.mod"
+      - "go.sum"

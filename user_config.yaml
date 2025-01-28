@@ -1,0 +1,28 @@
+settings:
+  base_path: "/home/aaron.medina/Desktop/workspace/fork-cdk-constructs"  # Path to your repository
+  branch: "main"             # Branch for dependabot updates
+  intervals:                 # Update intervals for each ecosystem
+    pip: "daily"
+    npm: "daily"
+    docker: "daily"
+    github-actions: "daily"
+    gradle: "weekly"
+  pull_requests_limit: 10    # Limit on open pull requests per ecosystem
+  ignored_paths:
+    - "**/node_modules/**"
+    - dist
+    - build
+    - .git
+    - "**/__pycache__"
+    - "**/temp/**"
+    - backend/generated-files/
+  grouping_strategy: "package-ecosystem"  # Options: "none", "package-ecosystem", "custom"
+  custom_groups:
+    - name: "core-packages"
+      directories:
+        - "../fork-cdk-constructs"
+        - "../fork-cdk-constructs/packages/shared-vpc"
+    - name: "feature-packages"
+      directories:
+        - "../fork-cdk-constructs/packages/prerender-fargate"
+        - "../fork-cdk-constructs/packages/geoip-redirect"
