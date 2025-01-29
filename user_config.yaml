@@ -1,14 +1,14 @@
 settings:
-  base_path: "/home/aaron.medina/Desktop/workspace/fork-cdk-constructs"  # Path to your repository
-  branch: "main"             # Branch for dependabot updates
-  intervals:                 # Update intervals for each ecosystem
+  base_path: "<PATH HERE>"                  # Path to your repository, will be considered as the root directory
+  branch: "main"                            # Branch for dependabot updates
+  intervals:                                # Update intervals for each ecosystem (OPTIONS: "daily", "weekly", "monthly")
     pip: "daily"
     npm: "daily"
     docker: "daily"
     github-actions: "daily"
     gradle: "weekly"
-  pull_requests_limit: 10    # Limit on open pull requests per ecosystem
-  ignored_paths:
+  pull_requests_limit: 10                   # Limit on open pull requests per ecosystem
+  ignored_paths:                            # Paths that will not be included in the scan
     - "**/node_modules/**"
     - dist
     - build
@@ -16,13 +16,13 @@ settings:
     - "**/__pycache__"
     - "**/temp/**"
     - backend/generated-files/
-  grouping_strategy: "package-ecosystem"  # Options: "none", "package-ecosystem", "custom"
+  grouping_strategy: "package-ecosystem"    # OPTIONS: "none", "package-ecosystem", "custom"
   custom_groups:
     - name: "core-packages"
       directories:
-        - "../fork-cdk-constructs"
-        - "../fork-cdk-constructs/packages/shared-vpc"
+        - "../<sample path 1>"
+        - "../<sample path 2>"
     - name: "feature-packages"
       directories:
-        - "../fork-cdk-constructs/packages/prerender-fargate"
-        - "../fork-cdk-constructs/packages/geoip-redirect"
+        - "../<sample path 3>"
+        - "../<sample path 4>"

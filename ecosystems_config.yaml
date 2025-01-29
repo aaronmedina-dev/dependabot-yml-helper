@@ -1,14 +1,11 @@
 ecosystems:
   pip:
     files: 
-      - "requirements.txt"
-      - "**/requirements-dev.txt"
-      - "**/constraints.txt"
-
-  poetry:
-    files: 
-      - "pyproject.toml"
-      - "**/poetry.lock"
+      - "requirements.txt"              # For pip
+      - "**/requirements-dev.txt"       # For pip
+      - "**/constraints.txt"            # For pip
+      - "pyproject.toml"                # For poetry
+      - "**/poetry.lock"                # For poetry  
 
   npm:
     files: 
