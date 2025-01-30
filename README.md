@@ -11,7 +11,9 @@ Writing a **dependabot.yml** file can be tricky since there are many ways to str
 - There are multiple ways to group PRs (by ecosystem, by folder, by dependency type, etc.).
 - Different projects have **different update strategies** and PR handling methods.
 
+
 Instead, this helper:
+
 ✅ **Generates a solid base dependabot.yml file**  
 ✅ **Lists all detected package ecosystems** in your project  
 ✅ **Provides folder and dependency patterns** for better insights  
