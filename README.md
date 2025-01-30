@@ -2,7 +2,7 @@
 
 Aaron Medina | [GitHub](https://github.com/aaronmedina-dev) | [Linkedin](https://www.linkedin.com/in/aamedina/)
 
-A **helper tool** for generating **base dependabot.yml files** and providing **dependency patterns** for better insights on how to group pull requests.
+A **helper tool** for generating **base dependabot.yml files** and providing **dependency patterns** for better insights on how to optimise groups and other configuration.
 
 ---
 
@@ -14,10 +14,9 @@ Writing a **dependabot.yml** file can be tricky since there are many ways to str
 
 Instead, this helper:
 
-✅ **Generates a solid base dependabot.yml file**  
+✅ **Generates a base dependabot.yml file**  
 ✅ **Lists all detected package ecosystems** in your project  
 ✅ **Provides folder and dependency patterns** for better insights  
-✅ **Lets you customize groupings based on your project’s needs**  
 
 ---
 
